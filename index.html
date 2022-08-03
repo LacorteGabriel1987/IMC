@@ -8,57 +8,30 @@
 </head>
 <body>
     <h1>IMC - Indice Massa Corporal</h1>
-    <div class="box">
 
-        <!-- Barra perguntas -->
+    <p>
+        <label for="input-weight">Informe o seu peso (kg):</label>
 
-        <div class="IMC"> 
-            Qual o seu peso? <input class="elementos" type="text"   style="width: 4em"> (kg) / 
-            Qual a sua altura? <input class="elementos" type="text"    style="width: 4em"> (m)
-         </div> <br>
+        <input id="input-weight" type="number" min="10"max="200" step="0.1" value=""/>
+      </p>
+  
+      <p>
+        <label for="input-height">Informe a sua altura (m):</label>
 
-         <!-- Barra respostas -->
+        <input id="input-height" type="number" min="1" max="3" step="0.01" value=""/>
+      </p>
+  
+      <p>
+        <button id="button-calculate-imc">Calcular IMC</button>
+      </p>
+  
+      <p id="p-imc">O seu IMC é <strong id="imc"></strong></p>
 
-         <div class="btn"> <input type="button" value="Resultado" onclick="calcular()" ></div>        
+              
 
-         <div id="res"> <input class="elementos" type="text" >  </div>
-        
+                 
     </div>
-    <script src="script.js" >      
-    //Variável
-    var peso = 20;
-    var altura = 1.90;
-    var imc = peso / (altura*altura);   
-    console.log(imc)
-
-    //Precisa buscar os campos de interação (peso, altura, resultado)
-    function calcular(peso, altura){ //não sei se entra essas informações 
-    document.getElementById("textp")
-    document.getElementById("testa")
-   
-    }
-
-    //Condicionante
-    function condicao(){
-        if (imc < 18,5){
-        console.log (`Abaixo do peso`)
-    } else if (imc > 18,60 && imc < 25,00) {
-        console.log(`Peso ideal (parabéns)`)
-    } else if ( imc >25,00 && imc < 30,00) {
-        console.log (`Levemente acimado peso`)
-    } else if (imc > 30,00 && imc < 35,00){
-        console.log (`Obesidade grau I`)
-    } else if (imc > 35 && imc < 40.00) {
-        console.log (`Obesidade grau II (severa)`)
-    } else {
-        console.log (`Obesidade III(mórbita)`)
-    }
-}
-           
-    </script>
-
-
+    <script src="script.js" > </script>    
     
-
 </body>
 </html>
