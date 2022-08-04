@@ -26,7 +26,7 @@ function start() {
   function condicao(imc){
     
     var mensagemIMC = document.querySelector(`#p-mensagem`)
-    
+
         if (imc < 18.5){
         mensagemIMC.textContent = (`Abaixo do peso`)
     } else if (imc > 18.60 && imc < 25.00) {
@@ -34,7 +34,7 @@ function start() {
     } else if ( imc > 25.00 && imc < 30.00) {
         mensagemIMC.textContent = (`Levemente acimado peso`)
     } else if (imc > 30.00 && imc < 35.00){
-        mensagemIMC.textContent = (`Obesidade grau I`)
+        mensagemIMC.textContent = (`Obesidade grau I (procurar um especialista)` )
     } else if (imc > 35 && imc < 40.00) {
         mensagemIMC.textContent =  (`Obesidade grau II (severa)`)
     } else {
