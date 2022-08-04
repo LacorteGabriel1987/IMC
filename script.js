@@ -26,6 +26,7 @@ function start() {
   function condicao(imc){
     
     var mensagemIMC = document.querySelector(`#p-mensagem`)
+    
         if (imc < 18.5){
         mensagemIMC.textContent = (`Abaixo do peso`)
     } else if (imc > 18.60 && imc < 25.00) {
