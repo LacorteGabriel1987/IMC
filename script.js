@@ -29,10 +29,10 @@ function start() {
 
         if (imc < 18.5){
         mensagemIMC.textContent = (`Abaixo do peso`)
-    } else if (imc > 18.60 && imc < 25.00) {
+    } else if (imc > 18.50 && imc < 25.00) {
         mensagemIMC.textContent = (`Peso ideal (parabéns)`)
     } else if ( imc > 25.00 && imc < 30.00) {
-        mensagemIMC.textContent = (`Levemente acimado peso`)
+        mensagemIMC.textContent = (`Levemente acima do peso`)
     } else if (imc > 30.00 && imc < 35.00){
         mensagemIMC.textContent = (`Obesidade grau I (procurar um especialista)` )
     } else if (imc > 35 && imc < 40.00) {
